@@ -1,0 +1,140 @@
+/* global reset */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+}
+
+body {
+  font-family: system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol', 'Noto Color Emoji';
+  line-height: 1.5;
+  min-height: 100svh;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas,
+    'DejaVu Sans Mono', monospace;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  line-height: 1.15;
+}
+
+canvas,
+img,
+svg,
+video {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+audio {
+  display: block;
+  max-width: 100%;
+}
+
+/* optional reset */
+
+img {
+  font-style: italic;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  overflow-wrap: break-word;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+@supports (text-wrap: pretty) {
+  p {
+    hyphens: auto;
+    text-wrap: pretty;
+  }
+}
+
+p {
+  max-width: 75ch;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#root {
+  isolation: isolate;
+}
+
+/*  */
+
+section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+}
+
+button {
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+.sections {
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+
+#one {
+  background-color: thistle;
+}
+#two {
+  background-color: tomato;
+}
+#three {
+  background-color: turquoise;
+}
+#four {
+  background-color: violet;
+}
+#five {
+  background-color: yellowgreen;
+}
